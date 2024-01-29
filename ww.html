@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Page</title>
+
+</head>
+<body>
+<script>
+  let myRandom = (a, b) => {
+        return Math.round(Math.random() * (b - a) + a)
+    }
+   let interval = setInterval(()=> {
+      document.body.style.background = `rgb(${myRandom(0, 255)},${myRandom(0, 255)},${myRandom(0, 255)})`
+
+    }, 300)
+   body.onload = () => {
+       clearInterval(interval)
+    }
+</script>
+</body>
+</html>
